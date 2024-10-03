@@ -1,0 +1,14 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: test-runner
+  namespace: actions-runner-system-group
+spec:
+  template:
+    spec:
+      ephemeral: true # runner will be destroyed after completion of the job
+      dockerEnabled: false
+      organization: S-T-I-I  # specify name of the organization
+      labels:
+        - test-runner-org # runner label

@@ -1,0 +1,12 @@
+certManagerEnabled: true
+
+scope:
+  singleNamespace: false
+
+#
+authSecret:
+  create: true
+  github_token: ${github_token}
+
+githubWebhookServer:
+  enabled: false

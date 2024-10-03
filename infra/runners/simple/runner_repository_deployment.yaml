@@ -1,0 +1,11 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: docker-images
+  namespace: actions-runner-system-simple
+spec:
+  replicas: 1
+  template:
+    spec:
+      repository: popit-dev/docker-images
